@@ -1,0 +1,23 @@
+.grid {
+
+    display: grid;
+    --gridColumns:1;
+    grid-template-columns: repeat(var(--gridColumns), 1fr);
+    
+
+    @for $i from 2 through 12 {
+        &--#{$i}{
+            --gridColumns:#{$i};
+        }
+    }
+
+
+
+   &--4{
+    @include mobile-s{
+        --gridColumns:2;
+    }
+  }
+
+}
+

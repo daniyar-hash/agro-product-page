@@ -1,0 +1,257 @@
+.features {
+    background-color: #0B0B0B;
+    text-align: center;
+    min-height: 272px;
+    --section-base-padding-y:0;
+    --section-large-padding-y:0;
+
+
+    @include tablet{
+        min-height: 230px;
+        display: flex; //ii
+        flex-direction: column; //ii
+
+    }
+
+    &.section{
+
+         @include mobile {
+            min-height: 190px;
+            --section-base-padding-y:0;
+            --section-large-padding-y:0;
+          }
+
+    }
+    
+   
+
+    &__body{
+
+        @include tablet{
+            flex: 1;//ii
+            display: flex;//ii
+            flex-direction: column;//ii
+            
+        }
+
+        @include mobile {
+            padding-inline: 5px;
+        }
+    
+    }
+
+    &__menu-list{
+  
+        align-items: start;
+
+        @include tablet{
+            flex: 1;//ii
+            align-items: stretch; //
+        }
+
+        @include mobile-s {
+            grid-auto-rows: 1fr;
+        }
+
+   
+
+    }
+
+    &__menu-item{
+
+
+        &:first-child a{
+             padding-top: 56px;
+
+            @include tablet{
+                padding-top: 0;
+ 
+            }
+
+            @include mobile {
+                row-gap: 5px;
+      
+            }
+
+            @include mobile-s{
+                row-gap: 18px;
+            }
+
+                 & img{
+            @include mobile{
+                margin-top: 35px;
+            }
+
+            @include mobile-s{
+                margin-top: 0;
+       
+            }
+          }
+
+          @include mobile-s{
+            padding-top: 10px;
+          }
+        }
+
+        &:nth-child(2) a{
+            row-gap: 31.2px;
+
+
+            @include tablet {
+                row-gap: 8px;
+            }
+
+            // @include mobile{
+            //     row-gap: 5px;
+            // }
+
+                 & img{
+            @include mobile{
+                margin-top: 20px;
+            }
+
+            @include mobile-s{
+                margin-top: 0;
+            }
+        }
+        }
+
+         &:last-child a{
+            padding-top: 49px;
+            @include tablet{
+                padding-top:0;
+            }
+
+            & img{
+                margin-bottom: 27.2px;
+
+                @include tablet{
+                    margin-bottom: 8px;
+                }
+            }
+        }
+
+
+
+    }
+
+    &__menu-link{
+        display:flex;
+        padding-top: 41px;
+        padding-inline: 28px;
+        padding-bottom: 72px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 29.2px;
+        clip-path: polygon(25% 0, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 25%);
+
+
+         @include tablet{
+            justify-content: center;
+            padding-block: 0;
+            padding-inline: 0;
+            row-gap: 20px;
+            height: 100%;
+         }
+
+         @include mobile{
+            justify-content: start;
+            padding-inline: 10px;
+         }
+
+         @include mobile-s{
+            padding-block: 10px;
+            padding-inline: 5px;
+            
+         }
+
+
+     &:focus{
+        background-color: var(--color-red-alt);
+
+     }    
+       
+    @include hover{
+        background-color: var(--color-red-alt);
+    }
+
+        &.arrow{
+            justify-content: space-between;
+            row-gap: 0;
+            padding-bottom: 28px;
+
+            @include tablet{
+                padding-bottom: 0;
+                justify-content: center;
+                row-gap: 12px;
+            }
+
+            @include mobile {
+                row-gap: 0;
+            }
+
+            @include mobile-s{
+                row-gap: 5px;
+                padding-bottom: 10px;
+                padding-top: 0;
+            }
+
+            img{
+                margin-bottom: 30.2px;
+
+                     @include tablet{
+                        margin-bottom: 0;
+                        margin-top: 25px;
+           
+                    }
+
+                    @include mobile {
+                        margin-top: 0;
+                    }
+            }
+
+            & h3{
+                margin-bottom: 24px;
+
+                @include tablet{
+                    margin-bottom: 0;
+                }
+            }
+
+
+        }
+    
+
+        &.arrow:after{
+            content: "";
+            width: 51px;
+            height: 20px;
+            background: url("../img/icons/arrow-right.svg");
+        }
+    }
+
+    &__menu-title{
+        max-width: 226px;
+        font-weight: 500;
+        line-height: 1.12;
+        font-size: 16px;
+   
+
+        @include mobile{
+            font-size: 12px;
+        }
+
+        @include mobile-s{
+            font-size: 16px;
+        }
+
+    
+    }
+    &__menu-image{
+        @include mobile{
+           width: 50%;
+
+        }
+    }
+  }

@@ -1,0 +1,47 @@
+@import "mixins";
+
+body{
+
+    @include fluid-text(24,12);
+    font-family: var(--font-family-base);
+    font-weight: 500;
+    color: var(--color-light);
+    background-color: var(--color-light);
+
+
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    @include reset_link;
+}
+button {
+    @include reset_button;
+}
+
+h1,h2,h3,h4{
+    font-weight: 700;
+}
+
+h1, .h1{
+    @include fluid-text(48,32)
+}
+
+h2, .h2{
+    @include fluid-text(36, 26)
+}
+
+h3, .h3{
+        @include fluid-text(24, 16)
+}
+
+h4, .h4{
+    @include fluid-text(16,12);
+}

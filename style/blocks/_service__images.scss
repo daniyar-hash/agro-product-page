@@ -1,0 +1,179 @@
+.service__images{
+
+    @include mobile{
+        order: -1;
+    }
+
+
+
+    &-wrapper{
+
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 490px;
+        height: 620px;
+        background:url(../img/service/combo-img.png) center center/cover no-repeat;
+
+
+
+        
+          @include mobile-above{
+            width: 440px;
+            height: 560px;
+            background-size: 90%;
+         }
+
+         @include tablet{
+            width: 392px;
+            height: 496px;
+            background-size: 80%;
+         }
+
+          @include tablet-above{
+            width: 440px;
+            height: 560px;
+            background-size: 90%;
+         }
+        
+        @include desktop-above{
+            width: 490px;
+            height: 620px;
+            background-size: 100%;
+
+        }
+   
+ 
+
+
+              @include mobile-s{
+                width: 343px;
+                height: 434px;
+                background-size:70%;
+        }
+
+
+
+
+        .icon{
+
+            position: absolute;
+            color: var(--color-red-alt);
+            display: inline-flex;
+          
+        }
+
+        .triangle-1{
+          
+            width: 13.4%;
+            right: 25%;
+            bottom: 0;
+
+            @include tablet{
+                bottom: 7%;
+               }
+            }
+
+        .triangle-2{
+              width: 26%;            
+              right: 80%;
+              bottom: 11%;
+
+              @include tablet{
+                right: 68%;
+              }
+
+
+              @include mobile-s{
+                right: 62%;
+              }
+
+              @include tablet-above{
+                right: 72%;
+              }
+
+              @include desktop-above{
+                right: 77%;
+              }
+            }
+        .triangle-3{
+
+            width: 32%;
+            left: 20%;
+            top: 27%;
+        
+
+            @include tablet{
+                left: 20%;
+                top: 25%;
+            }
+
+        }
+        .triangle-4{
+            width: 14%;
+            right:7%;
+            top: 0;
+
+
+
+
+            @include tablet{
+              right: 18%;
+              top: 3%;
+
+            }
+
+
+            
+            @include mobile-s{
+                  right: 21%;
+                  top: 8%;
+            }
+
+
+            @include tablet-above{
+                right: 13%;
+                top: 5%;
+          }
+
+          @include desktop-above{
+            top: 0;
+          }
+
+      
+
+            }
+    .triangle-5{
+            width: 41.2%;
+            left: 75%;
+            bottom: 11%;
+
+
+            @include tablet{
+              left: 63%;
+            }
+
+            @include tablet-above{
+                left: 67%;
+            }
+
+            @include desktop-above{
+              left: 75%;
+            }
+
+            @include mobile-s{
+                  left: 58%;
+                  bottom: 11%;
+              }
+
+         
+              
+            }
+
+
+
+    }
+
+}

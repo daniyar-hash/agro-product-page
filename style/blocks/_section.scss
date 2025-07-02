@@ -1,0 +1,109 @@
+.section{
+
+   --rowGapBlocks:74px;
+   padding-top:var(--section-base-padding-y);
+   padding-bottom: var(--section-large-padding-y);
+
+
+
+   @include mobile{
+      --section-base-padding-y:50px;
+      --section-large-padding-y:50px;
+         --rowGapBlocks:40px;
+   }
+
+
+  // &:has(.banner){
+  //        --section-base-padding-y:0;
+  //        --section-large-padding-y:0;
+  //  }
+
+
+   &:has(.category){
+       color: var(--color-dark);
+   }
+
+   &:has(.about-us){
+        background: linear-gradient(rgba(14,14,14,0.6), rgba(14,14,14,0.6)),
+                url("../img/about-us/bg.png") 0 0 / cover no-repeat;
+        min-height: 670px;
+   }
+
+
+
+   &:has(.news){
+
+        min-height: 800px;
+        background-color: var(--color-gray);
+        color:var(--color-dark);
+
+   }
+
+    &__inner{
+
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--rowGapBlocks);
+ 
+    }
+
+  &__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 32px;
+
+
+     }
+    &__title{
+        padding-bottom: 8px;
+        padding-inline: 10px;
+        border-bottom: 4px solid var(--color-red-alt);
+        line-height: 1.33;
+        max-width: 856px;
+        text-transform: uppercase;
+
+        
+
+            @include mobile {
+              padding-inline: 20px;
+              padding-bottom: 0;
+       }
+
+    }
+
+ 
+
+  &__description{
+    max-width: 892px;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    
+
+    @include tablet{
+      font-size: 18px;
+    }
+
+    @include mobile{
+      padding-top: 20px;
+    }
+
+  }
+}
+
+.logo{
+      svg *[fill]{
+            fill:var(--color-green-alt);
+        }
+
+        svg path.red-line{
+            fill:var(--color-red-alt);
+        }
+
+
+        @include hover{
+          opacity: 0.5;
+        }
+}

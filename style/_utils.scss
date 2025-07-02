@@ -1,0 +1,84 @@
+ @import"mixins";
+  @import"media";
+
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+.container{
+    max-width: calc(var(--container-width) + var(--container-padding-x)*2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+    // border: 2px solid green;
+  
+
+}
+
+.container-wide{
+    max-width: 1640px;
+        margin-inline: auto;
+
+    // @include desktop-above{
+    //     width: 100vw;
+    // }
+}
+
+.hidden-mobile {
+    @include mobile{
+        display: none !important;
+    }
+
+}
+
+.visible-mobile{
+    @include mobile-above{
+        display: none !important;
+    }
+}
+
+.button{
+        display: inline-block;
+        text-transform: uppercase;
+        border: var(--border);
+        font-weight: 700;
+        font-size: clamp(12px, 0.85vw,14px);
+        padding-block: 14px;
+        padding-inline: 20px;
+        text-align: center;
+        cursor: pointer;
+        
+        @include hover{
+            opacity: .5;
+        }
+}
+
+.header__button{
+    width: 168px;
+    height: 40px;
+
+}
+.footer__button{
+    width: 176px;
+    height: 40px;
+
+}
+
+.button-medium{
+    width: 216px;
+    height: 52px;
+}
+.button-large{
+    width: 236px;
+    height: 56px;
+}
+
