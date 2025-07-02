@@ -60,7 +60,7 @@
     &__title{
         padding-bottom: 8px;
         padding-inline: 10px;
-        border-bottom: 4px solid var(--color-red-alt);
+        border-bottom: 4px solid var(--color-green-alt);
         line-height: 1.33;
         max-width: 856px;
         text-transform: uppercase;
@@ -99,7 +99,7 @@
         }
 
         svg path.red-line{
-            fill:var(--color-red-alt);
+            fill:var(--color-green-alt);
         }
 
 

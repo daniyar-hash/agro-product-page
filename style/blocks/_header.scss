@@ -83,10 +83,9 @@
             padding-bottom: 26px;
             line-height: 1.4;
             font-size: 16px;
-            
-            
+         
 
-            &:focus{
+            &:focus, &.is-current{
                 &::after{
                   width: 100%;
 
@@ -108,7 +107,7 @@
                 height: 4px;
                 bottom: 0;
                 left: 50%;
-                background-color: var(--color-red-alt);
+                background-color: var(--color-green-alt);
                 transition-duration: inherit;
                 transform: translate(-50%);
 
@@ -202,7 +201,7 @@
             width: 32px;
             aspect-ratio: 1;
             border-radius: 50%;
-            background-color: var(--color-red-alt);
+            background-color: var(--color-green-alt);
 
                @include tablet{
                
