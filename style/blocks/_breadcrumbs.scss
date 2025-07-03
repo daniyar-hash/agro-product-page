@@ -17,8 +17,21 @@
         justify-content: center;
         align-items: center;
         column-gap: 16px;
+
+
+
        
 
+    }
+
+    &__item{
+
+
+    color: var(--color-green-alt);
+        &.is-current{
+            color: inherit;
+     
+        }
     }
 
 

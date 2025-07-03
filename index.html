@@ -10,7 +10,7 @@
 <body>
     <header class="header transparent">
         <div class="header__inner container">
-          <a href="/" class="header__logo logo">
+          <a href="../agro-site-main-page" class="header__logo logo">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
              viewBox="0 0 457.000000 296.000000"
             preserveAspectRatio="xMidYMid meet">
@@ -86,9 +86,95 @@
                 </a>
             </li>
               <li class="header__menu-item">
-                <a href="#" class="header__menu-link is-current">
-                    Каталог
-                </a>
+                <a class="header__menu-link is-current header__catalog">
+                    Каталог     </a>
+                    <div class="header__catalog-aside">
+                        <ul class="header__catalog-menu">
+                            <li class="header__catalog-item">
+                                <a href="#" class="header__catalog-link">
+                                    <span class="header__catalog-link-text">Пестициды</span>
+                                    <span class="header__catalog-link-icon">
+                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M8 4L12 10L8 16" stroke="#1D1D1D" stroke-width="4"/>
+                                         </svg>
+                                    </span>
+                                </a>
+                                <div class="header__catalog-dropdown">
+                                    <ul class="header__catalog-menu">
+                                        <li class="header__catalog-item">
+                                            <a href="#" class="header__catalog-link">
+                                                <span class="header__catalog-link-text">Фунгициды</span>
+                                            </a>
+                                        </li>
+                                         <li class="header__catalog-item">
+                                            <a href="#" class="header__catalog-link">
+                                                <span class="header__catalog-link-text">Гербициды</span>
+                                            </a>
+                                        </li>
+                                         <li class="header__catalog-item">
+                                            <a href="#" class="header__catalog-link">
+                                                <span class="header__catalog-link-text">Инсектициды</span>
+                                            </a>
+                                        </li>
+                                         <li class="header__catalog-item">
+                                            <a href="#" class="header__catalog-link">
+                                                <span class="header__catalog-link-text">Акарициды</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__catalog-item">
+                                <a href="#" class="header__catalog-link">
+                                    <span class="header__catalog-text">Удобрения</span>
+                                    <span class="header__catalog-icon">
+                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M8 4L12 10L8 16" stroke="#1D1D1D" stroke-width="4"/>
+                                         </svg>
+                                    </span>
+                                </a>
+                                   <div class="header__catalog-dropdown">
+                                    <ul class="header__catalog-menu">
+                                        <li class="header__catalog-item">
+                                            <a href="#" class="header__catalog-link">
+                                                <span class="header__catalog-link-text">Стимуляторы роста</span>
+                                            </a>
+                                        </li>
+                                         <li class="header__catalog-item">
+                                            <a href="#" class="header__catalog-link">
+                                                <span class="header__catalog-link-text">Регуляторы роста</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__catalog-item">
+                                <a href="#" class="header__catalog-link">
+                                    <span class="header__catalog-text">ПРочее</span>
+                                    <span class="header__catalog-icon">
+                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M8 4L12 10L8 16" stroke="#1D1D1D" stroke-width="4"/>
+                                         </svg>
+                                    </span>
+                                </a>
+                                    <div class="header__catalog-dropdown">
+                                    <ul class="header__catalog-menu">
+                                        <li class="header__catalog-item">
+                                            <a href="#" class="header__catalog-link">
+                                                <span class="header__catalog-link-text">Текст</span>
+                                            </a>
+                                        </li>
+                                         <li class="header__catalog-item">
+                                            <a href="#" class="header__catalog-link">
+                                                <span class="header__catalog-link-text">Текст</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+            
             </li>
               <li class="header__menu-item">
                 <a href="#" class="header__menu-link">
@@ -201,7 +287,7 @@
         <div class="breadcrumbs container">
             <div class="breadcrumbs__inner">
                 <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item">
+                    <li class="breadcrumbs__item ">
                         <a href="/" class="breadcrumbs__link">Главная
                             <span class="visually-hidden">Стрелка навигации</span>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -209,105 +295,88 @@
                             </svg>
                         </a>
                     </li>
-                     <li class="breadcrumbs__item">
-                        <a href="/" class="breadcrumbs__link">Каталог</a>
+                     <li class="breadcrumbs__item is-current">
+                        <a class="breadcrumbs__link">Каталог</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <section class=" section products">
+        <section class=" section">
             <div class="section__inner container">
                  <header class="section__header">
                     <h2 class="section__title products__title">
-                        Автотовары: аксессуары, <br>
-                        расходники и многое другое
+                       Каталог
                     </h2>
-                    <div class="section__description products__description ">
-                        <p>
-                        PROAuto - это специализированный интернет магазин востребованных 
-                        товаров для автомобилей.
-                        </p>
-                    </div>
                  </header>
-                 <div class="section__body">
-                    <ul class="products__images-list grid grid--3">
-                        <li class="products__images-item" tabindex="0">
-                            <a href="#"class="products__images-link" tabindex="0">
-                                <img src="img/products/1.jpg" alt="Products for auto" class="products__images-image" width="250" height="290" loading="lazy">
-                                <div class="products__images-hover">
-                                    <h3 class="products__images-title">Аккумуляторы</h3>
-                                    <button class="products__images-button button button-medium">Заказать онлайн</button>
-                                </div>    
-                            </a>
+                 <div class="section__body categories">
+                    <ul class="categories__list grid grid--3">
+                        <li class="categories__item">
+                            <div href="/" class="category">
+                                <h3 class="category__title"><a href="/" class="category__title-link">Пестициды</a></h3>
+                                <ul class="category__list">
+                                    <li class="category__item">
+                                        <a href="/" class="category__link">Фунгициды</a>
+                                    
+                                    </li>
+                                     <li class="category__item">
+                                        <a href="/" class="category__link">Инсектициды</a>
+                                    
+                                    </li>
+                                     <li class="category__item">
+                                        <a href="/" class="category__link">Акарициды</a>
+                                    
+                                    </li>
+
+                                </ul>
+
+                            </div>
                         </li>
-                        <li class="products__images-item">
-                            <a href="#" class="products__images-link">
-                                <img src="img/products/2.jpg" alt="Products for auto" class="products__images-image" width="250" height="290" loading="lazy">
-                                <div class="products__images-hover">
-                                    <h3 class="products__images-title">Автомасла</h3>
-                                    <button class="button products__images-button button-medium">Заказать онлайн</button>
-                                </div>  
-                            </a>
+                        <li class="categories__item">
+                            <div href="/" class="category">
+                                <h3 class="category__title">
+                                    <a href="/" class="category__title-link">Удобрения</a>
+                                </h3>
+                                <ul class="category__list">
+                                    <li class="category__item">
+                                        <a href="/" class="category__link">Регуляторы роста</a>
+                                    
+                                    </li>
+                                     <li class="category__item">
+                                        <a href="/" class="category__link">Стимуляторы роста</a>
+                                    
+                                    </li>
+                       
+                                </ul>
+
+                            </div>
+                            
                         </li>
-                        <li class="products__images-item">
-                            <a href="#" class="products__images-link">
-                                <img src="img/products/3.jpg" alt="Products for auto" class="products__images-image" width="250" height="290" loading="lazy">
-                                 <div class="products__images-hover">
-                                    <h3 class="products__images-title">Автокосметика</h3>
-                                    <button class="button products__images-button button-medium">Заказать онлайн</button>
-                                </div> 
-                            </a>
-                        </li>
-                        <li class="products__images-item">
-                            <a href="#" class="products__images-link">
-                                <img src="img/products/4.jpg" alt="Products for auto" class="products__images-image" width="250" height="290" loading="lazy">
-                                 <div class="products__images-hover">
-                                    <h3 class="products__images-title">Автоаксессуары</h3>
-                                    <button class="button products__images-button button-medium">Заказать онлайн</button>
-                                </div> 
-                            </a>
-                        </li>
-                        <li class="products__images-item">
-                            <a href="#" class="products__images-link">
-                                <img src="img/products/5.jpg" alt="Products for auto" class="products__images-image" width="250" height="290" loading="lazy">
-                                 <div class="products__images-hover">
-                                    <h3 class="products__images-title">Автохимия</h3>
-                                    <button class="button products__images-button button-medium">Заказать онлайн</button>
-                                </div> 
-                            </a>
-                        </li>
-                        <li class="products__images-item">
-                            <a href="#" class="products__images-link">
-                                <img src="img/products/6.jpg" alt="Products for auto" class="products__images-image" width="250" height="290" loading="lazy">
-                                <div class="products__images-hover">
-                                    <h3 class="products__images-title">Расходники</h3>
-                                    <button class="button products__images-button button-medium">Заказать онлайн</button>
-                                </div> 
-                            </a>
-                        </li>
-                        <li class="products__images-item">
-                            <a href="#" class="products__images-link">
-                                <img src="img/products/6.jpg" alt="Products for auto" class="products__images-image" width="250" height="290" loading="lazy">
-                                <div class="products__images-hover">
-                                    <h3 class="products__images-title">Расходники</h3>
-                                    <button class="button products__images-button button-medium">Заказать онлайн</button>
-                                </div> 
-                            </a>
-                        </li>
-                        <li class="products__images-item">
-                            <a href="#" class="products__images-link">
-                                <img src="img/products/6.jpg" alt="Products for auto" class="products__images-image" width="250" height="290" loading="lazy">
-                                <div class="products__images-hover">
-                                    <h3 class="products__images-title">Расходники</h3>
-                                    <button class="button products__images-button button-medium">Заказать онлайн</button>
-                                </div> 
-                            </a>
+                        <li class="categories__item">
+                            <div href="/" class="category">
+                                <h3 class="category__title"><a href="/" class="category__title-link" >Прочее</a></h3>
+                                <ul class="category__list">
+                                    <li class="category__item">
+                                        <a href="/" class="category__link">текст</a>
+                                    
+                                    </li>
+                                     <li class="category__item">
+                                        <a href="/" class="category__link">текст</a>
+                                    
+                                    </li>
+                                     <li class="category__item">
+                                        <a href="/" class="category__link">текст</a>
+                                    
+                                    </li>
+
+                                </ul>
+
+                            </div>
                         </li>
                     </ul>
                  </div>
             </div>
         </section>
-      </main>
+    </main>
     <footer class="footer">
         <div class="footer__inner container">
             <div class="footer__body grid grid--6">
