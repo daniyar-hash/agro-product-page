@@ -1,49 +1,58 @@
 .pagination{
-    text-align: center;
-    color: inherit;
-    margin-top: auto;
-    position: absolute;
-
-    bottom: 10%;
-    left:50%;
-    translate: -50%;
-
-    &__list{
-        display: flex;
-        column-gap: 12px;
-        align-items: center;
-        justify-content: center;
 
 
-    }
+	min-height: 50px;
+	width: 100%;
+	padding-bottom: 10px;
+	font-size: 16px;
+
+&__inner{
+
+	display: flex;
+	justify-content: center;
+	column-gap: 50px;
+	background-color: #ebebeb;
+	align-items: center;
+	
+}
+
+&__list{
+	display: flex;
+	column-gap: 40px;
+
+}
+
+&__item{
+		&.is-current{
+		color: var(--color-light);
+		background-color: var(--color-green-alt);
+
+		.pagination__link{
+			cursor:default;
+			user-select: none;
+		} 
+	
+	}
+}
+
+&__link{
+	@include flex-center;
+	width: 30px;
+	height: 30px;
+
+}
 
 
-    &__label{
-        display: inline-block;
-        width: 112px;
-        height: 54px;
-        background-color: transparent;
-        border-bottom: var(--border);
-        border-color: var(--color-light);
-        cursor: pointer;
+.pagination__button{
+	background-color: transparent;
+	width: 20px;
+	height: 20px;
+	@include flex-center(true);
+	@include reset-button;
 
-
-
-
-
-        // &.active{
-        //     border-color: var(--color-green-alt);
-        // }
-
-        @include tablet{
-            width: 80px;
-        }
-
-        @include mobile-s{
-            width: 50px;
-        }
-    }
 }
 
 
 
+
+}

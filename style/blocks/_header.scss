@@ -1,12 +1,18 @@
 .header{
 
-    background-color: #0D0D0D;
+    background-color:var(--color-dark);
     position: fixed;
     top: 0;
     left: 50%;
     translate: -50%;
     width: 100%;
-    z-index: 10;
+    z-index: 1;
+  
+
+
+    &:has(.flex-column){
+        background-color: unset;
+    }
 
 
     &.transparent{
@@ -14,15 +20,64 @@
     }
 
     &.solid{
-        opacity: 1;
+       background-color: #212f25;
     }
 
     &__inner{
      
-        padding-top: 24px;
-        min-height: 100px;
+      //  padding-top: 24px;
+       // min-height: 100px;
         text-transform: uppercase;
         display: flex;
+
+        // &.flex-column{
+        //     flex-direction: column;
+        //     align-items: center;
+        //     padding-top: 0;
+
+
+        //      .header__navigation-wrapper{
+        //         background-color: var(--color-dark);
+        //         width: 100%;
+        //         display: block;
+        //      }
+
+        
+            .header__container{
+                display: flex;
+                height: 70px;
+               // column-gap: 15px;
+            }
+
+            .header__menu{
+                align-self:unset;
+                display: flex;
+                align-items: center;
+
+                &-list{
+                    align-items: center;
+                    height: 100%;
+                }
+
+                &-item{
+              
+                    height: 100%;
+                }
+
+                &-link{
+                    padding-block: 20px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+
+                }
+
+            }
+   
+
+
+        }
 
         @include tablet{
                  min-height: 80px;
@@ -31,7 +86,7 @@
                 
         }
 
-    }
+    
 
         @include mobile{
                 &.container{
@@ -47,21 +102,44 @@
         margin-right: auto;
         display: flex;
         flex-shrink: 0;
-     
-        @include tablet{
-            flex-shrink: 0;
-            margin-right:auto;
-      
-        }
 
+        &.logo-main{
+            width: 200px;
+            height: 150px;
+            margin-right: unset;
+            order: 1;
+
+
+                svg *[fill]{
+          
+                  fill: var(--color-green-light);
+                }
+
+                svg path.red-line{
+                    fill: var(--color-green-light);
+       
+                }
+       
+        }
+     
+     }
+
+    &__navigation-wrapper{
+        display: contents;
     }
+
+    &__container{
+        display: contents;
+    }
+
     &__menu{
-        align-self: end;
+     
 
         &-list{
                 display: flex;
-                column-gap: 12px;
+                column-gap: 50px;
                 justify-content: space-between;
+                height: 100%;
 
                 @include tablet{
                     column-gap: 5px;
@@ -70,6 +148,10 @@
             }
 
         &-item{
+
+            height: 100%;
+            display: flex;
+            position: relative;
             &:hover .header__catalog-aside{
                 display: block;
             }
@@ -79,10 +161,11 @@
             
         &-link{
                 position: relative;
-                display: inline-block;
+                display: flex;
+                align-items: center;
                 padding-inline:8px;
-                padding-top: 8px;
-                padding-bottom: 26px;
+                // padding-top: 8px;
+                // padding-bottom: 26px;
                 line-height: 1.4;
                 font-size: 16px;
             
@@ -133,9 +216,10 @@
         &-aside,  &-dropdown{
           display: none;
           background-color: rgba($color: #000000, $alpha: 0.8);
-          padding: 10px;
           font-size: 12px;
           position: absolute;
+        //  border-radius: 10px;
+          top: 100%;
           width: 228px;
       
         }
@@ -152,6 +236,14 @@
             justify-content: space-between;
             column-gap: 60px;
             border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-block: 10px;
+            padding-left:20px;
+            
+            
+            &-icon{
+               @include flex-center;
+            
+            }
   
             
             @include hover{
@@ -163,6 +255,7 @@
 
         &-item{
             position: relative;
+
 
 
             &:hover .header__catalog-dropdown{
@@ -183,19 +276,20 @@
 
     }
 
-    &__button{
+    &__call-link{
      
         font-size: 12px;
         margin-right: 23px;
-        // line-height: 1.35;
         padding-block: 8px;
         align-self: center;
         margin-left: auto;
         flex-shrink: 0;
+        width: 168px;
+        height: 40px;
         
 
           @include tablet{
-               margin-right: 0;
+               margin-right: 10px;
                padding-inline: 6px;
                @include fluid-text(12,10);
                width: unset;
@@ -206,6 +300,27 @@
 
           }
 
+    }
+
+    &__social-link{
+        @include flex-center(true);
+        margin-right: 10px;
+
+   
+        svg path{
+            &.icon-whatsapp-1{
+                fill:#cfd8dc;
+            }
+
+                &.icon-whatsapp-2{
+                fill:#40c351;
+            }
+
+ 
+         
+             
+        }
+   
     }
 
     &__icons-wrapper{
@@ -223,7 +338,7 @@
         }
     }
 
-      &__icon-search{
+    &__icon-search{
             display: inline-flex;
             padding: 8px 7px 6px;
 
@@ -237,7 +352,7 @@
 
 
     &__burger-menu{
-        color: #fff;
+        color: #fff; 
     }
 
 }

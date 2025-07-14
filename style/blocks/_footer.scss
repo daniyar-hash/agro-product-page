@@ -2,8 +2,7 @@
 
     position: relative;
     z-index: 0;
-    padding-top: 51px;
-    padding-bottom: 68px;
+    padding-block: 10px;
     font-size: 12px;
 
     @include tablet{
@@ -15,8 +14,8 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: url("../img/footer/footer-bg.jpg") center/cover no-repeat;
-        opacity: 0.2;
+        background: url("../img/footer/footer-bg.png") center/cover no-repeat;
+        opacity: 0.3;
         z-index: -1;
     }
 
@@ -32,7 +31,7 @@
     }    
 
     &__body{
-        gap: 30px;
+      //  gap: 30px;
 
         @include tablet{
             gap: 10px;
@@ -130,33 +129,40 @@
 
 
     &-contacts__item{
-        &:first-child{
-            margin-bottom: 12px;
-        }
 
-        &:nth-child(2){
-            margin-bottom: 20px;
-        }
+        margin-bottom: 10px;
+        text-transform:lowercase;
+        // &:first-child{
+        //     margin-bottom: 12px;
+        // }
+
+        // &:nth-child(2){
+        //     margin-bottom: 20px;
+        // }
     }
     &-contacts__link{
         display: flex;
+        justify-content: start;
+        align-items: center;
         column-gap: 8px;
 
-        svg *[fill]{
-            fill:var(--color-green-alt);
+        .phone-icon *[fill],
+        .email-icon *[fill]{
+            fill:var( --color-green-alt);
         }
 
-
-
-        &.mail{
-            text-transform:lowercase;
+   
+        &.instagramm{
+            column-gap: 0;
         }
     }
 
-    &__button{
+    &__call-link{
         padding-block: 10px;
         font-size: 12px;
         line-height: 1;
+        width: 176px;
+        height: 40px;
 
         @include desktop{
             width: 100%;
