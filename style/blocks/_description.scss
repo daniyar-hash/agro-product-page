@@ -1,0 +1,42 @@
+.description{
+
+    background-color: var(--color-light);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+
+    &__property-item{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    &__detail{
+        max-width: 600px;
+    }
+
+    &__table-wrapper{
+        max-width: 900px;
+
+        table,caption,td, th{
+            border: 1px solid var(--color-gray-alt);
+            text-align: center;
+            padding: 5px;
+         
+
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-weight: 700;
+            padding-block: 5px;
+        }
+    }
+}
