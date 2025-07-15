@@ -1,0 +1,11 @@
+.product-page{
+
+    background-color: var(--color-gray);
+    padding-block: 10px;
+    color: var(--color-dark);
+
+
+    &__inner{
+        background-color: var(--color-light);
+    }
+}
