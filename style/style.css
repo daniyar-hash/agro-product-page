@@ -869,6 +869,16 @@ h4, .h4 {
 }
 .product__image-wrapper {
   padding: 20px;
+  position: relative;
+}
+.product__linza {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  cursor: none;
+  border-radius: 50%;
+  border: 3px solid var(--color-gray-alt);
+  opacity: 0;
 }
 .product__info {
   flex-grow: 1;
